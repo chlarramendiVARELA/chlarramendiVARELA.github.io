@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f5f1eb">
+  <meta name="description" content="Coro Hernando de Larramendi. Liderazgo humanista, transformación digital e inteligencia artificial: poner a las personas en el centro del cambio.">
+  <title>Coro Hernando de Larramendi | Liderar es acompañar</title>
+  <style>
+    :root{--bg:#f5f1eb;--ink:#283431;--muted:#58645f;--accent:#a86f59;--line:#d9d0c5;--cream:#fffdfa;--green:#dce2d9;--sand:#e9ddd1;--dark:#293633}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:inherit}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.shell{width:min(1160px,calc(100% - 60px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(245,241,235,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .top{min-height:85px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .logo{font:normal 1.28rem Georgia,serif;text-decoration:none;letter-spacing:-.04em}.logo em{font-style:normal;color:var(--accent)}nav{display:flex;gap:30px}nav a{text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:.67rem;font-weight:bold}nav a:hover,.link:hover{color:var(--accent)}
+    section{scroll-margin-top:95px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,6vw,90px);align-items:center;min-height:660px;padding:68px 0 95px}
+    .overline{display:block;color:#93624e;font-size:.72rem;text-transform:uppercase;letter-spacing:.21em;font-weight:bold}.overline:before{content:"";display:inline-block;width:30px;height:1px;background:currentColor;vertical-align:middle;margin-right:12px}
+    h1,h2,h3,.statement{font-family:Georgia,"Times New Roman",serif;font-weight:normal;letter-spacing:-.045em}h1{font-size:clamp(4.2rem,7.7vw,8rem);line-height:1.02;margin:28px 0 28px}h1 em,h2 em{color:var(--accent);font-weight:normal}
+    .lead{font-size:1.17rem;max-width:520px;color:#4a5752}.micro{font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:#7c827b;margin:28px 0}
+    .button{display:inline-block;background:var(--dark);color:white;text-decoration:none;text-transform:uppercase;font-size:.72rem;letter-spacing:.11em;font-weight:bold;padding:15px 25px;transition:background .2s}.button:hover{background:#8f5b49}
+    .hero-art{height:550px;position:relative;overflow:hidden;background:var(--sand);display:flex;align-items:center;justify-content:center;border-radius:48% 48% 0 0/27% 27% 0 0}
+    .hero-art:before{content:"";position:absolute;inset:12% 10%;border:1px solid rgba(117,94,82,.36);border-radius:48% 48% 0 0/27% 27% 0 0}
+    .hero-art:after{content:"";position:absolute;background:#ccb4a7;width:280px;height:280px;border-radius:50%;bottom:-155px;right:-80px}
+    .monogram{font:italic 22rem Georgia,serif;color:#a88476;line-height:1;transform:translateY(-25px)}.art-note{position:absolute;z-index:1;bottom:32px;right:28px;font-size:.66rem;text-align:right;text-transform:uppercase;letter-spacing:.18em;color:#736259}
+    .section{padding:105px 0}.split{display:grid;grid-template-columns:.78fr 1.22fr;gap:clamp(36px,8vw,125px)}.section-index{font-size:.72rem;font-weight:bold;letter-spacing:.18em;color:var(--accent)}
+    h2{font-size:clamp(3.1rem,5vw,5.4rem);line-height:1.13;margin:20px 0 30px}.body-copy{font-size:1.075rem;color:#52605a}.body-copy p{margin:0 0 21px}.body-copy .intro{font:normal clamp(1.4rem,2.1vw,2rem)/1.52 Georgia,serif;letter-spacing:-.02em;color:var(--ink)}
+    .principles{background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.principles h2{max-width:760px}.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:48px}.principle{border-top:1px solid #cdbdae;padding-top:25px}.principle .number{font:normal 1.2rem Georgia,serif;color:var(--accent)}h3{font-size:1.9rem;line-height:1.18;margin:24px 0 16px}.principle p{color:var(--muted);margin-bottom:0}
+    .topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:43px}.topic{min-height:312px;background:var(--sand);padding:32px;display:flex;flex-direction:column}.topic:nth-child(2){background:var(--green)}.topic:nth-child(3){background:#e7e0d6}.topic small{text-transform:uppercase;letter-spacing:.15em;font-weight:bold;font-size:.7rem;color:#8c695a}.topic h3{font-size:clamp(1.8rem,2.45vw,2.6rem);margin:25px 0}.topic p{margin:auto 0 0;color:#58625b}
+    .quote-band{background:var(--dark);color:#f5f1e9;text-align:center;padding:100px 0}.quote-band .overline{color:#d7a48b}.quote-band .overline:before{display:none}.statement{font-size:clamp(2.5rem,4.5vw,4.7rem);line-height:1.25;max-width:900px;margin:30px auto}.quote-band p{max-width:690px;margin:auto;color:#c9d1c9}
+    .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:end}.contact p{max-width:540px;color:var(--muted);font-size:1.07rem}.contact-action{padding-bottom:30px}.link{display:inline-block;text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:5px;font-size:.77rem;text-transform:uppercase;letter-spacing:.1em;font-weight:bold}
+    footer{border-top:1px solid var(--line);padding:22px 0;font-size:.78rem;color:#66726a}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){.hero{grid-template-columns:1fr .8fr}.hero-art{height:465px}.monogram{font-size:18rem}.topic{padding:23px}.trio{gap:22px}}
+    @media(max-width:700px){.shell{width:calc(100% - 36px)}.top{min-height:92px;flex-direction:column;align-items:flex-start;justify-content:center;gap:6px}nav{gap:20px}nav a{font-size:.58rem}.hero{grid-template-columns:1fr;padding:62px 0 80px;gap:44px}h1{font-size:clamp(3.9rem,12.5vw,6rem)}.hero-art{height:370px;max-width:470px;width:100%;margin:auto}.monogram{font-size:15rem}.section{padding:75px 0}.split,.contact-grid{grid-template-columns:1fr;gap:20px}.trio,.topic-grid{grid-template-columns:1fr}.topic{min-height:230px}.principle{padding-bottom:15px}.quote-band{padding:75px 0}.contact-action{padding-bottom:0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
+</head>
+<body>
+  <header><div class="shell top"><a class="logo" href="#inicio"><em>Coro</em> Hernando de Larramendi</a><nav aria-label="Navegación principal"><a href="#sobre-mi">Sobre mí</a><a href="#ideas">Ideas y conferencias</a><a href="#contacto">Contacto</a></nav></div></header>
+  <main id="inicio">
+    <section class="shell hero" aria-labelledby="title"><div>
+      <span class="overline">Liderazgo · Transformación · Personas</span>
+      <h1 id="title">Liderar es <em>acompañar.</em></h1>
+      <p class="lead">En un mundo que cambia a una velocidad extraordinaria, creo que el liderazgo más necesario es también el más humano: el que escucha, confía y ayuda a las personas a avanzar.</p>
+      <p class="micro">Coro Hernando de Larramendi · Sevilla, España</p>
+      <a class="button" href="#sobre-mi">Conóceme</a>
+    </div><div class="hero-art" role="img" aria-label="Composición gráfica editorial con la inicial C, provisional hasta incorporar fotografía profesional"><span class="monogram" aria-hidden="true">C</span><span class="art-note">Pensar · Transformar<br>Acompañar</span></div></section>
+    <section class="section" id="sobre-mi"><div class="shell split">
+      <div><span class="section-index">01 / SOBRE MÍ</span><h2>Experiencia, curiosidad y <em>personas.</em></h2></div>
+      <div class="body-copy"><p class="intro">Soy Coro Hernando de Larramendi. Llevo más de 25 años emprendiendo, coordinando proyectos y trabajando con personas y organizaciones.</p><p>Mi trayectoria profesional comenzó en el mundo de la traducción y la comunicación internacional, donde he desarrollado proyectos para clientes de diversos sectores y coordinado amplias redes de colaboradores.</p><p>Hoy combino esa experiencia empresarial con mi interés por la inteligencia artificial, el futuro del trabajo, la innovación y la inversión en iniciativas emprendedoras.</p><p>Me interesa especialmente cómo liderar la transformación de las organizaciones sin perder de vista lo esencial: las personas.</p></div>
+    </div></section>
+    <section class="principles section"><div class="shell"><span class="section-index">02 / MI FORMA DE ENTENDER EL LIDERAZGO</span><h2>Transformar exige algo más que <em>cambiar procesos.</em></h2><div class="trio">
+      <article class="principle"><span class="number">01</span><h3>Escuchar para comprender</h3><p>Las mejores decisiones empiezan por entender a las personas y los contextos en los que trabajan.</p></article>
+      <article class="principle"><span class="number">02</span><h3>Confiar y exigir</h3><p>Acompañar es ofrecer autonomía y apoyo, sin renunciar a la responsabilidad ni a los resultados.</p></article>
+      <article class="principle"><span class="number">03</span><h3>Transformar juntos</h3><p>Los cambios tienen más sentido cuando quienes deben vivirlos participan en su construcción.</p></article>
+    </div></div></section>
+    <section class="section" id="ideas"><div class="shell"><span class="section-index">03 / IDEAS Y CONFERENCIAS</span><h2>Conversaciones que <em>merecen la pena.</em></h2><p class="body-copy">Estos son algunos de los temas que me interesan y sobre los que quiero abrir conversaciones con empresas, universidades y organizaciones.</p><div class="topic-grid">
+      <article class="topic"><small>Liderazgo</small><h3>Liderar es acompañar</h3><p>Confianza, escucha, exigencia y cercanía en tiempos de cambio.</p></article>
+      <article class="topic"><small>Tecnología y personas</small><h3>La dimensión humana de la IA</h3><p>Cómo aprovechar la inteligencia artificial sin perder criterio, responsabilidad y propósito.</p></article>
+      <article class="topic"><small>Trayectoria profesional</small><h3>Reinventarse para seguir creciendo</h3><p>Emprendimiento, aprendizaje continuo y nuevas oportunidades en un mundo que se transforma.</p></article>
+    </div></div></section>
+    <section class="quote-band"><div class="shell"><span class="overline">Una convicción</span><p class="statement">La tecnología puede ayudarnos a llegar más lejos. El liderazgo humano nos recuerda <em>para qué.</em></p><p>Me interesa tender puentes entre innovación, trabajo y una manera de dirigir que ayude a las personas a crecer.</p></div></section>
+    <section class="section contact" id="contacto"><div class="shell contact-grid"><div><span class="section-index">04 / CONTACTO</span><h2>Hablemos de <em>lo que importa.</em></h2><p>Si compartimos inquietudes sobre liderazgo, transformación y futuro del trabajo, estaré encantada de conectar.</p></div><div class="contact-action"><a class="link" href="https://www.linkedin.com/search/results/people/?keywords=Coro%20Hernando%20de%20Larramendi" target="_blank" rel="noopener noreferrer">Búscame en LinkedIn ↗</a></div></div></section>
+  </main>
+  <footer><div class="shell foot"><span>© <span id="year">2026</span> Coro Hernando de Larramendi</span><span>Sevilla · España</span></div></footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
